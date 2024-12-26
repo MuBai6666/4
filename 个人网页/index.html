@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网页</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 300px;
+            pointer-events: none;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="confetti-canvas"></canvas>
+    
+    <header>
+        <h1>欢迎来到我的个人网页</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#contact">联系方式</a></li>
+                <li><a href="tetris/爱心/index.html" target="_blank">🎮 玩游戏</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="avatar/profile.png" alt="沐白的头像">
+                </div>
+                <div class="about-text">
+                    <h3>沐白</h3>
+                    <p class="title">无聊人士
+                    </p>
+                    <p class="description">
+                        我是一名游戏热爱者，还喜欢看动漫。我热爱对一些有趣的事物去探索和研究，喜欢交流，有时也会冷场。
+                        在学习中，我专注于注意力看情况，并且还要根据心情。
+                    </p>
+                    <div class="interests">
+                        <h4>个人爱好：</h4>
+                        <ul>
+                            <li>📚 喜欢书籍（龙族，一年永恒）</li>
+                            <li>🎮 电子游戏（永劫无间，PC端游戏）</li>
+                            <li>🏃 性格特点（开朗，乐观）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>技能</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>前端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">🤚 有手就行</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">✌️ 太双</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 999%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>后端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">🪝 钩</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">🔒 锁</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">💥 百裂</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 999%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>开发工具</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">⚡ 长闪</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">🏃 躲</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">⚔️ 白刀</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 999%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">🤲 抓</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 999%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>其他技能</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">📱 玩手机技巧</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">👀 观察力MAX</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">🏀 隐身术</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 999%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">⚡ 快速收手</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 888%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>艺术技能</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">🎭 唱</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">🎨 跳</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">🎵 Rap</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">🏀 篮球</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>其他特长</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">🎭 表演</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">🎨 创作</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <div class="contact-info">
+                <p><i class="phone-icon">📱</i> 电话：13092700209</p>
+                <p><i class="email-icon">📧</i> 邮箱：2678414541@qq.com</p>
+                <p><i class="location-icon">📍</i> 地址：m78星云</p>
+                <div class="social-links">
+                    <h4>社交媒体：</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">微信</a></li>
+                        <li><a href="#" target="_blank">QQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 我的个人网页. 保留所有权利</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('confetti-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // 设置canvas尺寸
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = 300;
+        }
+        
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+        
+        // 彩带类
+        class Confetti {
+            constructor() {
+                this.reset();
+            }
+            
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = -10;
+                this.size = Math.random() * 8 + 8;
+                this.speed = Math.random() * 2 + 1;
+                this.angle = Math.random() * 360;
+                this.spin = Math.random() * 8 - 4;
+                this.color = `hsl(${Math.random() * 360}, 100%, 70%)`;
+            }
+            
+            update() {
+                this.y += this.speed;
+                this.angle += this.spin;
+                
+                if (this.y > canvas.height) {
+                    this.reset();
+                }
+            }
+            
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.angle * Math.PI / 180);
+                ctx.fillStyle = this.color;
+                ctx.fillRect(-this.size/2, -this.size/2, this.size, this.size);
+                ctx.restore();
+            }
+        }
+        
+        // 创建彩带数组
+        const confettis = Array(100).fill().map(() => new Confetti());
+        
+        // 添加计时器变量
+        let startTime = Date.now();
+        const duration = 3000; // 3秒
+        
+        // 修改动画循环
+        function animate() {
+            // 检查是否超过3秒
+            if (Date.now() - startTime > duration) {
+                // 清除画布
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                return; // 停止动画
+            }
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            confettis.forEach(confetti => {
+                confetti.update();
+                confetti.draw();
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        
+        // 启动动画
+        animate();
+    </script>
+</body>
+</html> 

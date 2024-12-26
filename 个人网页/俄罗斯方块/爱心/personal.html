@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈壮的个人网页</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #e0e0e0;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .game-link {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .game-link:hover {
+            background: #45a049;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="avatar.jpg" alt="个人头像" class="profile-img">
+            <h1>陈壮</h1>
+            <p class="subtitle">Web开发者 / 游戏爱好者</p>
+        </header>
+
+        <div class="content">
+            <div class="card">
+                <h2>关于我</h2>
+                <p>你好！我是陈壮，一名热爱编程和游戏的开发者。我喜欢创造有趣的网页和游戏，希望能够通过代码为世界带来一些乐趣。</p>
+                <a href="index.html" class="game-link">玩俄罗斯方块</a>
+            </div>
+
+            <div class="card">
+                <h2>技能特长</h2>
+                <ul>
+                    <li>前端开发</li>
+                    <li>游戏开发</li>
+                    <li>UI设计</li>
+                    <li>问题解决</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>项目展示</h2>
+                <p>俄罗斯方块游戏</p>
+                <p>- 使用HTML5 Canvas开发</p>
+                <p>- 支持键盘控制</p>
+                <p>- 包含分数系统</p>
+                <p>- 有趣的视觉效果</p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="#">微博</a>
+            <a href="#">邮箱</a>
+        </div>
+    </div>
+</body>
+</html> 
